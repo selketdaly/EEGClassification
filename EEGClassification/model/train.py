@@ -43,7 +43,7 @@ def determine_accuracy(model: Sequential, test_dataset: Dataset) -> int:
 determine_accuracy.__doc__ = "Uses the test dataset to determine the accuracy of the model"
 
 
-def plot_accuracy(model: Sequential) -> None:
+def plot_accuracy() -> None:
     history_dictionary = history.history
     accuracy = history_dictionary['binary_accuracy']
     validation_accuracy = history_dictionary['val_binary_accuracy']
@@ -58,3 +58,6 @@ def plot_accuracy(model: Sequential) -> None:
     plt.legend(loc='lower right')
 
     plt.show()
+
+
+plot_accuracy.__doc__ = "Plots the accuracy of the model"

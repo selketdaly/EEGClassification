@@ -8,4 +8,4 @@ def run(split_dataset: dict, vocabulary_size: int = 1000, embedding_dimension: i
                         validation_dataset=split_dataset['validation'], epochs=epochs)
     accuracy = determine_accuracy(model=model, test_dataset=split_dataset['testing'])
     print("Model has an accuracy of ", str(accuracy * 100), "%")
-    plot_accuracy(model=model)
+    plot_accuracy()
